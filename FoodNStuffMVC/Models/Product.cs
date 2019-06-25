@@ -13,10 +13,12 @@ namespace FoodNStuffMVC.Models
         [Required]
         public string ProductName { get; set; }
         [Required]
+        [Display(Name = "Number left in stock")]
         public int InventoryCount { get; set; }
         [Required]
         public decimal Price { get; set; }
         [Required]
+        [Display(Name = "It is food")]
         public bool IsFood { get; set; }
         
     }
